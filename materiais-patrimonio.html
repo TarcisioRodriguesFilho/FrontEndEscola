@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Materiais e Patrimônios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Materiais e Patrimônios</h1>
+    <a href="index.html" class="voltar">Voltar ao Menu</a>
+  </header>
+  <main>
+    <section>
+      <h2>Cadastro de Materiais</h2>
+      <form id="formMaterial">
+        <label>Nome do Material:</label>
+        <input type="text" id="nomeMaterial" required>
+        <label>Tipo:</label>
+        <input type="text" id="tipoMaterial" required>
+        <label>Quantidade:</label>
+        <input type="number" id="quantidadeMaterial" required>
+        <button type="submit">Salvar Material</button>
+      </form>
+    </section>
+    <section>
+      <h2>Cadastro de Patrimônios</h2>
+      <form id="formPatrimonio">
+        <label>Nome do Patrimônio:</label>
+        <input type="text" id="nomePatrimonio" required>
+        <label>Código:</label>
+        <input type="text" id="codigoPatrimonio" required>
+        <label>Localização:</label>
+        <input type="text" id="localizacaoPatrimonio" required>
+        <button type="submit">Salvar Patrimônio</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

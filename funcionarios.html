@@ -17,10 +17,31 @@
       <form id="formFuncionario">
         <label>Nome do Funcionário:</label>
         <input type="text" id="nomeFuncionario" required>
-        <label>Cargo:</label>
-        <input type="text" id="cargoFuncionario" required>
-        <label>NIF:</label>
-        <input type="text" id="nifFuncionario" required>
+        <label>Data de Nascimento:</label>
+        <input type="date" id="dataNascimentoAluno" required>
+        <label>CPF:</label>
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"	id="Digite um CPF no formato: xxx.xxx.xxx-xx">
+        <fieldset>
+          <label>Sexo:</label>
+          <label><input type="radio" name="sexo" value="masculino" required>Masculino</label>
+          <label><input type="radio" name="sexo" value="feminino">Feminino</label>
+          <label><input type="radio" name="sexo" value="nao_binario">Não Binário</label>
+          <label><input type="radio" name="sexo" value="outros">Outros</label>
+        </fieldset>
+        <label>Escolaridade:
+          <select name="escolaridade">
+              <option value="">Selecione...</option>
+              <option value="ensino_fundamental1">Ensino Fundamental 1</option>
+              <option value="ensino_fundamental2">Ensino Fundamental 2</option>
+              <option value="ensino_medio">Ensino Médio</option>
+          </select>
+      </label>
+      <label>Código do Funcionário:</label>
+        <input type="text" id="codigoFuncionario" required>
+        <label>Nome do Pai:</label>
+        <input type="text" id="nomePai" required>
+        <label>Nome da Mãe:</label>
+        <input type="text" id="nomeMae" required>
         <button type="submit">Salvar Funcionário</button>
       </form>
     </section>

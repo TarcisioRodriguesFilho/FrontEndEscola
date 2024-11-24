@@ -19,18 +19,16 @@
         <input type="text" id="nomeAluno" required>
         <label>Data de Nascimento:</label>
         <input type="date" id="dataNascimentoAluno" required>
-        <div>
-          <label>Sexo:
-          <label for="sexo-m">Masculino</label>
-          <input type="radio" name="sexo" id="sexo-m" value="masculino" required />
-          <label for="sexo-f">Feminino</label>
-          <input type="radio" name="sexo" id="sexo-f" value="feminino" />
-          <label for="naoBinario">Não Binário</label>
-          <input type="radio" name="sexo" id="sexo-n" value="naoBinario" />
-          <label for="outros">Outros</label>
-          <input type="radio" name="sexo" id="sexo-o" value="outros" />
-          </label>
-        </div>
+        <label>CPF:</label>
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"	id="Digite um CPF no formato: xxx.xxx.xxx-xx">
+      </form>
+      <fieldset>
+        <label>Sexo:</label>
+        <label><input type="radio" name="sexo" value="masculino" required>Masculino</label>
+        <label><input type="radio" name="sexo" value="feminino">Feminino</label>
+        <label><input type="radio" name="sexo" value="nao_binario">Não Binário</label>
+        <label><input type="radio" name="sexo" value="outros">Outros</label>
+      </fieldset>
         <label>Escolaridade:
           <select name="escolaridade">
               <option value="">Selecione...</option>
@@ -43,6 +41,10 @@
         <input type="text" id="turmaAluno" required>
         <label>Código do Aluno:</label>
         <input type="text" id="codigoAluno" required>
+        <label>Nome do Pai:</label>
+        <input type="text" id="nomePai" required>
+        <label>Nome da Mãe:</label>
+        <input type="text" id="nomeMae" required>
         <button type="submit">Salvar Aluno</button>
       </form>
     </section>
